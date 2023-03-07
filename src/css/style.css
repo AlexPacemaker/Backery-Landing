@@ -77,16 +77,16 @@ ul > li > a {
   color: black;
   font-size: 18px;
   padding: 10px;
-  margin: 0 auto;
 }
 
 nav {
-  width: 1440px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
   background-color: #ffe2b0;
   font-weight: bold;
 }
+
 nav > ul > li a:hover {
   color: rgb(241, 13, 36);
   box-shadow: 2px 2px 10px 5px grey;
@@ -95,21 +95,18 @@ nav > ul > li a:hover {
 
 .sticky_nav {
   position: sticky;
-  width: 1440px;
+  width: 1250px;
   margin: 0 auto;
-  left: 100px;
-  top: 0px;
   z-index: 1;
   margin-bottom: 10px;
 }
 
 .section-about {
-  width: 1440px;
-  margin: 0 auto;
+  width: 1350px;
   border-radius: 15px;
   box-shadow: 2px 2px 15px 5px grey;
   height: 640px;
-  background: url(../src/../img/01-Картинка-фона.jpg) center/cover no-repeat;
+  background: url(../src/../img/01-Картинка-фона.jpg) center;
   position: relative;
   margin-bottom: 20px;
 }
@@ -155,7 +152,9 @@ nav > ul > li a:hover {
 }
 
 .section_description__icons-box {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
